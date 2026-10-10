@@ -8,7 +8,7 @@
 # config/initializers/cors.rb
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "https://alexandermarggraf.de", "https://www.alexandermarggraf.de", "http://localhost:5173"
+    origins "https://alexandermarggraf.de", "https://www.alexandermarggraf.de"
     resource "*",
       headers: :any,
       methods: [:get, :post, :patch, :put, :delete, :options]
